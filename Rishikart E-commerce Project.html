@@ -1,0 +1,1088 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <title>Online Shopping for Electronics,Grocery And many more..</title>
+    <link rel="stylesheet" href="project 1flipkartclone style.css" />
+    <link rel="stylesheet" href="flipkart utility class style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <style>
+      /* responsive mobile device */
+      @media (max-width: 450px) {
+        header {
+          align-items: center;
+          background-color: #de9c50;
+          font-family: "Lato", "sans-serif";
+          position: sticky;
+          display: flex;
+          height: 60px;
+          width: auto;
+        }
+
+        h1 {
+          display: flex;
+          cursor: pointer;
+          width: 60%;
+          height: 30px;
+          padding: 20px 25px;
+          justify-content: center;
+        }
+        nav {
+          display: block;
+          align-items: center; /* Center align the items vertically */
+        }
+
+        nav ul {
+          display: flex;
+          align-items: center; /* Center align the li items vertically */
+          list-style: none;
+          height: 58px;
+          padding-top: 9px;
+          width: 50%;
+        }
+
+        nav ul li {
+          padding: 18px 23px;
+          font-size: large;
+          list-style: none;
+          width: 50%;
+        }
+
+        nav ul li a {
+          color: rgb(95, 87, 87);
+          text-decoration: none;
+        }
+        .search {
+          display: flex;
+          align-items: center; /* Center align the items vertically */
+        }
+
+        .search input {
+          width: 293px;
+          height: 27px;
+          border-radius: 5px;
+          border: 2px solid white;
+          margin: 0 16px 0 6px;
+          font-family: sans-serif;
+          font-weight: 700;
+          padding-left: 10px;
+          display: block;
+        }
+        .search input:hover {
+          cursor: pointer;
+        }
+        #home:hover {
+          color: black;
+          font-weight: bold;
+        }
+        #about:hover {
+          color: black;
+          font-weight: bold;
+        }
+        #categories:hover {
+          color: black;
+          font-weight: bold;
+        }
+        #mycart:hover {
+          color: black;
+          font-weight: bold;
+        }
+
+        .slider {
+          margin-right: 50vw;
+          background-size: cover;
+
+          display: flex;
+          justify-content: center;
+        }
+        .bigimage {
+          height: 350px;
+          margin-bottom: 25px;
+          border-radius: 20px;
+        }
+        .btn {
+          padding: 5px 10px;
+          color: black;
+          background-color: white;
+          border-radius: 7px;
+          border-radius: 2px solid white;
+          cursor: pointer;
+          font-family: "Times New Roman", Times, serif;
+          font-weight: 900;
+        }
+
+        .card1 {
+          background-color: white;
+          max-width: 91vw;
+          margin-right: auto;
+          margin-left: auto;
+          border-radius: 20px;
+          text-align: center;
+          padding: 20px;
+          padding-top: 10px;
+          background-color: #8fa6aa;
+          margin-bottom: 20px;
+        }
+
+        .card1 h4 a {
+          color: rgb(11, 143, 88);
+        }
+        .card2 {
+          background-color: white;
+          max-width: 91vw;
+          margin-right: auto;
+          margin-left: auto;
+          text-align: center;
+          padding: 20px;
+          border-radius: 14px;
+          margin-bottom: 20px;
+          background-image: url(https://img.freepik.com/free-photo/arrangement-black-friday-shopping-carts-with-copy-space_23-2148667047.jpg?size=626&ext=jpg&ga=GA1.2.28498493.1691928291&semt=ais);
+          background-size: 100%;
+        }
+        .card2 p {
+          color: rgb(213, 233, 145);
+        }
+        .card2 h4 {
+          color: rgb(242, 245, 240);
+        }
+        .card3 {
+          background-color: white;
+          max-width: 91vw;
+          margin-right: auto;
+          margin-left: auto;
+          text-align: center;
+          border-radius: 14px;
+          padding: 20px;
+          margin-bottom: 20px;
+        }
+        .card4 {
+          background-color: white;
+          max-width: 91vw;
+          margin-right: auto;
+          margin-left: auto;
+          border-radius: 14px;
+          text-align: center;
+          padding: 20px;
+          margin-bottom: 20px;
+        }
+        .card5 {
+          background-color: white;
+          max-width: 91vw;
+          margin-right: auto;
+          margin-left: auto;
+          text-align: center;
+          padding: 20px;
+          border-radius: 14px;
+          margin-bottom: 20px;
+        }
+        .card6 {
+          background-color: white;
+          max-width: 91vw;
+          margin-right: auto;
+          margin-left: auto;
+          text-align: center;
+          padding: 20px;
+          border-radius: 14px;
+          margin-bottom: 0;
+        }
+
+        .card p {
+          color: rgb(80, 110, 241);
+          font-weight: bolder;
+        }
+        .card-item {
+          justify-content: center;
+          flex-direction: column;
+          display: inline-flex;
+          padding-top: 15px;
+          padding-bottom: 15px;
+          margin-top: 15px;
+          margin-bottom: 15px;
+          border-radius: 20px;
+        }
+
+        .card-item img {
+          border-radius: 15px;
+        }
+
+        .card-item :hover {
+          transition: 1s;
+          cursor: pointer;
+        }
+        h4 a {
+          color: rgb(109, 216, 109);
+        }
+        h4:hover {
+          transition: 1s;
+          cursor: pointer;
+        }
+        card-item {
+          /* Existing styles */
+          position: relative; /* Required for absolute positioning */
+          overflow: hidden; /* Hide any overflowing content */
+        }
+
+        .card-item img {
+          /* Existing styles */
+          transition: transform 0.3s ease-in-out; /* Transition property for smooth animation */
+          border-radius: 15px;
+        }
+
+        .card-item:hover img {
+          /* Image styles on hover */
+          transform: scale(1.1); /* Increase the image size on hover */
+        }
+
+        .card-item:hover {
+          transition: 1s;
+        }
+
+        img {
+          display: inline-flex;
+        }
+
+        .lines {
+          display: block;
+        }
+        .card h3 {
+          font-family: sans-serif;
+        }
+
+        .container {
+          min-height: calc(100vh - 58px - 12vh);
+          background-color: rgb(176, 214, 229);
+          max-width: 100%;
+          max-height: 100%;
+          background-color: #de9c50;
+        }
+        main {
+          margin-bottom: 0;
+        }
+
+        footer {
+          height: 12vh;
+          background-color: #514d49;
+          color: white;
+          font-family: "Lato", "sans-serif";
+          justify-content: center;
+          align-items: center;
+        }
+        * {
+          margin: 0;
+          padding: 0;
+        }
+      }
+
+      /*REAL CSS CODE FOR HTML FILE */
+
+      header {
+        align-items: center;
+        background-color: #de9c50;
+        font-family: "Lato", "sans-serif";
+        position: sticky;
+        display: flex;
+        height: 60px;
+      }
+
+      h1 {
+        display: flex;
+        cursor: pointer;
+        width: auto;
+        height: 30px;
+        padding: 20px 25px;
+        justify-content: center;
+        transition: 2s;
+      }
+      nav {
+        display: flex;
+        align-items: center; /* Center align the items vertically */
+      }
+      .logo {
+        display: flex;
+        align-items: center; /* Center align the items vertically */
+      }
+
+      nav ul {
+        display: flex;
+        align-items: center; /* Center align the li items vertically */
+        list-style: none;
+        height: 58px;
+        padding-top: 9px;
+      }
+
+      nav ul li {
+        padding: 18px 23px;
+        font-size: large;
+        list-style: none;
+      }
+
+      nav ul li a {
+        color: black;
+        text-decoration: none;
+      }
+      .search {
+        display: flex;
+        align-items: center; /* Center align the items vertically */
+        margin-right: 200px;
+      }
+
+      .search input {
+        width: 493px;
+        height: 27px;
+        border-radius: 5px;
+        border: 2px solid white;
+        margin: 0 16px 0 56px;
+        font-family: sans-serif;
+        font-weight: 700;
+        padding-left: 10px;
+        display: flex;
+      }
+      .btn {
+        padding: 5px 10px;
+        color: black;
+        background-color: white;
+        border-radius: 7px;
+        border-radius: 2px solid white;
+        cursor: pointer;
+        font-family: "Times New Roman", Times, serif;
+        font-weight: 900;
+      }
+      .search input:hover {
+        cursor: pointer;
+      }
+      #home:hover {
+        color: black;
+        font-weight: bold;
+      }
+      #about:hover {
+        color: black;
+        font-weight: bold;
+      }
+      #categories:hover {
+        color: black;
+        font-weight: bold;
+      }
+      #mycart:hover {
+        color: black;
+        font-weight: bold;
+      }
+
+      .slider {
+        margin-right: 50vw;
+        background-size: cover;
+
+        display: flex;
+        justify-content: center;
+      }
+      .bigimage {
+        height: 350px;
+        margin-bottom: 25px;
+        border-radius: 20px;
+        cursor: pointer;
+      }
+
+      .card1 {
+        background-color: white;
+        max-width: 91vw;
+        margin-right: auto;
+        margin-left: auto;
+        border-radius: 20px;
+        text-align: center;
+        padding: 20px;
+        padding-top: 20px;
+        background-color: #9adeec;
+        margin-bottom: 20px;
+      }
+
+      .card1 h4 a {
+        color: rgb(11, 143, 88);
+      }
+      .card2 {
+        background-color: white;
+        max-width: 91vw;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+        padding: 20px;
+        border-radius: 14px;
+        margin-bottom: 20px;
+        background-image: url(https://img.freepik.com/free-photo/arrangement-black-friday-shopping-carts-with-copy-space_23-2148667047.jpg?size=626&ext=jpg&ga=GA1.2.28498493.1691928291&semt=ais);
+        background-size: 100%;
+      }
+      .card2 p {
+        color: rgb(213, 233, 145);
+      }
+      .card2 h4 {
+        color: rgb(242, 245, 240);
+      }
+      .card3 {
+        background-color: white;
+        max-width: 91vw;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+        border-radius: 14px;
+        padding: 20px;
+        margin-bottom: 20px;
+      }
+      .card4 {
+        background-color: white;
+        max-width: 91vw;
+        margin-right: auto;
+        margin-left: auto;
+        border-radius: 14px;
+        text-align: center;
+        padding: 20px;
+        margin-bottom: 20px;
+      }
+      .card5 {
+        background-color: white;
+        max-width: 91vw;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+        padding: 20px;
+        border-radius: 14px;
+        margin-bottom: 20px;
+      }
+      .card6 {
+        background-color: white;
+        max-width: 91vw;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+        padding: 20px;
+        border-radius: 14px;
+        margin-bottom: 0;
+      }
+
+      .card p {
+        color: rgb(80, 110, 241);
+        font-weight: bolder;
+      }
+      .card-item {
+        justify-content: center;
+        flex-direction: column;
+        overflow: hidden;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        border-radius: 20px;
+        display: inline-flex;
+      }
+
+      .card-item img {
+        border-radius: 15px;
+        transition: all ease 1s;
+      }
+
+      .card-item :hover {
+        transition: 1s;
+        cursor: pointer;
+      }
+      h4 a {
+        color: rgb(109, 216, 109);
+      }
+      h4:hover {
+        transition: 1s;
+        cursor: pointer;
+      }
+      card-item {
+        /* Existing styles */
+        position: relative; /* Required for absolute positioning */
+        overflow: hidden; /* Hide any overflowing content */
+      }
+
+      .card-item img {
+        /* Existing styles */
+        /* Transition property for smooth animation */
+        border-radius: 15px;
+      }
+
+      .card-item:hover img {
+        /* Image styles on hover */
+        transform: scale(1.2); /* Increase the image size on hover */
+      }
+
+      .card-item:hover {
+        transition: 1s;
+      }
+
+      img {
+        display: inline-flex;
+      }
+
+      .lines {
+        display: block;
+      }
+      .card h3 {
+        font-family: sans-serif;
+      }
+
+      .container {
+        min-height: calc(100vh - 58px - 12vh);
+
+        max-width: 100%;
+        max-height: 100%;
+        background-color: #de9c50;
+      }
+      main {
+        margin-bottom: 0;
+      }
+
+      footer {
+        height: 12vh;
+        background-color: #514d49;
+        color: white;
+        font-family: "Lato", "sans-serif";
+        justify-content: center;
+        align-items: center;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <h1><strong>RishiKart</strong></h1>
+        </div>
+        <div class="search">
+          <input
+            type="text"
+            placeholder="search for products,brands and many more..."
+          />
+
+          <button class="btn"><a href="submit"></a>Search</button>
+        </div>
+        <ul>
+          <li id="home">
+            <a href="Home.html"><b>Home</b></a>
+          </li>
+          <li id="about">
+            <a href="About.html"><b>About</b></a>
+          </li>
+          <li id="categories">
+            <a href="Contact.html"><b>Categories</b></a>
+          </li>
+          <li id="mycart">
+            <a href="Contact.html"><b>My Cart</b></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <div class="card1">
+          <div class="bigimage">
+            <img
+              src="https://source.unsplash.com/random/1150x350/?cart"
+              alt="big front image"
+            />
+          </div>
+          <h2 style="text-align: center">Top picks for you all</h2>
+          <div class="card-item">
+            <img
+              style="margin-left: 20px"
+              src="https://source.unsplash.com/random/160x160/?cricket"
+              alt=""
+              width="160px"
+            />
+            <h4><b>Cricket Bats</b></h4>
+            <h4><a href="see more">see more</a></h4>
+          </div>
+
+          <div class="card-item">
+            <img
+              style="margin-left: 20px"
+              src="https://source.unsplash.com/random/160x160/?jeans"
+              alt=""
+              width="160px"
+            />
+            <h4><b>Top Jeans</b></h4>
+            <h4><a href="see more">see more</a></h4>
+          </div>
+          <div class="card-item">
+            <img
+              style="margin-left: 20px"
+              src="https://source.unsplash.com/random/160x160/?food"
+              alt=""
+              width="160px"
+            />
+            <h4><b>Delicious food</b></h4>
+            <h4><a href="see more">see more</a></h4>
+          </div>
+          <div class="card-item">
+            <img
+              style="margin-left: 20px"
+              src="https://source.unsplash.com/random/160x160/?shoes"
+              alt=""
+              width="160px"
+            />
+            <h4><b>Fashionable Shoes</b></h4>
+            <h4><a href="see more">see more</a></h4>
+          </div>
+          <div class="card-item">
+            <img
+              style="margin-left: 20px"
+              src="https://source.unsplash.com/random/160x160/?books"
+              alt=""
+              width="160px"
+            />
+            <h4><b>Top Books</b></h4>
+            <h4><a href="see more">see more</a></h4>
+          </div>
+          <div class="card-item">
+            <img
+              style="margin-left: 20px"
+              src="https://source.unsplash.com/random/160x160/?makeup"
+              alt=""
+              width="160px"
+            />
+            <h4><b>Makeup Kit</b></h4>
+            <h4><a href="see more">see more</a></h4>
+          </div>
+          <div class="card-item">
+            <img
+              style="margin-left: 20px"
+              src="https://source.unsplash.com/random/160x160/?kitchen"
+              alt=""
+              width="160px"
+            />
+            <h4><b>Kitchen & many more..</b></h4>
+            <h4><a href="see more">see more</a></h4>
+          </div>
+
+          <div class="lines" style="text-align: center">
+            <p class="text-centre my-1">(Cricket Bats)</p>
+            <p class="text-centre my-1">Min 34% OFF</p>
+            <p class="text-centre my-1">Grab Now...!</p>
+          </div>
+        </div>
+        <div class="card2">
+          <h2 style="text-align: center">Today's top deals</h2>
+          <div class="card-item">
+            <img
+              style="margin-left: 20px"
+              src="https://source.unsplash.com/random/160x160/? apple ipads"
+              alt=""
+              width="160px"
+            />
+            <h4><b> Apple ipads</b></h4>
+            <h4><a href="see more">see more</a></h4>
+          </div>
+
+          <div class="card-item">
+            <img
+              style="margin-left: 20px"
+              src="https://source.unsplash.com/random/160x160/?camera"
+              alt=""
+              width="160px"
+            />
+            <h4><b>Cameras</b></h4>
+            <h4><a href="see more">see more</a></h4>
+          </div>
+          <div class="card-item">
+            <img
+              style="margin-left: 20px"
+              src="https://source.unsplash.com/random/160x160/?charger"
+              alt=""
+              width="160px"
+            />
+            <h4><b>Chargers</b></h4>
+            <h4><a href="see more">see more</a></h4>
+          </div>
+          <div class="card-item">
+            <img
+              style="margin-left: 20px"
+              src="https://source.unsplash.com/random/160x160/?printers"
+              alt=""
+              width="160px"
+            />
+            <h4><b>Top printers</b></h4>
+            <h4><a href="see more">see more</a></h4>
+          </div>
+          <div class="card-item">
+            <img
+              style="margin-left: 20px"
+              src="https://source.unsplash.com/random/160x160/?bags"
+              alt=""
+              width="160px"
+            />
+            <h4><b> Stylish bags</b></h4>
+            <h4><a href="see more">see more</a></h4>
+          </div>
+          <div class="card-item">
+            <img
+              style="margin-left: 20px"
+              src="https://source.unsplash.com/random/160x160/?helmets"
+              alt=""
+              width="160px"
+            />
+            <h4><b>Helmets</b></h4>
+            <h4><a href="see more">see more</a></h4>
+          </div>
+          <div class="card-item">
+            <img
+              style="margin-left: 20px"
+              src="https://source.unsplash.com/random/160x160/?socks and handkerchiefs"
+              alt=""
+              width="160px"
+            />
+            <h4><b>Handkerchiefs And Socks</b></h4>
+            <h4><a href="see more">see more</a></h4>
+          </div>
+
+          <div class="lines" style="text-align: center">
+            <p class="text-centre my-1">(Womens Bags)</p>
+            <p class="text-centre my-1">Min 38% OFF</p>
+            <p class="text-centre my-1">Grab Now...!</p>
+          </div>
+        </div>
+        <div class="card3">
+          <h2 style="text-align: center">Grooming,Auto and more..</h2>
+          <div class="card-item">
+            <img
+              style="margin-left: 20px"
+              src="https://source.unsplash.com/random/160x160/?geared cycles"
+              alt=""
+              width="160px"
+            />
+            <h4><b>Geared cycles</b></h4>
+            <h4><a href="see more">see more</a></h4>
+          </div>
+
+          <div class="card-item">
+            <img
+              style="margin-left: 20px"
+              src="https://source.unsplash.com/random/160x160/?soft toys"
+              alt=""
+              width="160px"
+            />
+            <h4><b>Top soft toys</b></h4>
+            <h4><a href="see more">see more</a></h4>
+          </div>
+          <div class="card-item">
+            <img
+              style="margin-left: 20px"
+              src="https://source.unsplash.com/random/160x160/?musical toys"
+              alt=""
+              width="160px"
+            />
+            <h4><b>Musical Toys</b></h4>
+            <h4><a href="see more">see more</a></h4>
+          </div>
+          <div class="card-item">
+            <img
+              style="margin-left: 20px"
+              src="https://source.unsplash.com/random/160x160/?spring instruments"
+              alt=""
+              width="160px"
+            />
+            <h4><b>Spring Instruments</b></h4>
+            <h4><a href="see more">see more</a></h4>
+          </div>
+          <div class="card-item">
+            <img
+              style="margin-left: 20px"
+              src="https://source.unsplash.com/random/160x160/?tricycles"
+              alt=""
+              width="160px"
+            />
+            <h4><b>Top tricycles</b></h4>
+            <h4><a href="see more">see more</a></h4>
+          </div>
+          <div class="card-item">
+            <img
+              style="margin-left: 20px"
+              src="https://source.unsplash.com/random/160x160/?beauty care"
+              alt=""
+              width="160px"
+            />
+            <h4><b>Top beauty care</b></h4>
+            <h4><a href="see more">see more</a></h4>
+          </div>
+          <div class="card-item">
+            <img
+              style="margin-left: 20px"
+              src="https://source.unsplash.com/random/160x160/?earings"
+              alt=""
+              width="160px"
+            />
+            <h4><b>Top Earings</b></h4>
+            <h4><a href="see more">see more</a></h4>
+          </div>
+
+          <div class="lines" style="text-align: center">
+            <p class="text-centre my-1">(Top Earings)</p>
+            <p class="text-centre my-1">Min 45% OFF</p>
+            <p class="text-centre my-1">Grab Now...!</p>
+          </div>
+        </div>
+        <div class="card4">
+          <h2 style="text-align: center">Kitchen,Food And Home Accessories</h2>
+          <div class="card-item">
+            <img
+              style="margin-left: 20px"
+              src="https://source.unsplash.com/random/160x160/?food"
+              alt=""
+              width="160px"
+            />
+            <h4><b>Delicious food</b></h4>
+            <h4><a href="see more">see more</a></h4>
+          </div>
+
+          <div class="card-item">
+            <img
+              style="margin-left: 20px"
+              src="https://source.unsplash.com/random/160x160/?kitchen plates"
+              alt=""
+              width="160px"
+            />
+            <h4><b>Kitchen plates</b></h4>
+            <h4><a href="see more">see more</a></h4>
+          </div>
+          <div class="card-item">
+            <img
+              style="margin-left: 20px"
+              src="https://source.unsplash.com/random/160x160/?showcases"
+              alt=""
+              width="160px"
+            />
+            <h4><b>Home showcase styles</b></h4>
+            <h4><a href="see more">see more</a></h4>
+          </div>
+          <div class="card-item">
+            <img
+              style="margin-left: 20px"
+              src="https://source.unsplash.com/random/160x160/?doors frames"
+              alt=""
+              width="160px"
+            />
+            <h4><b>Top door frames</b></h4>
+            <h4><a href="see more">see more</a></h4>
+          </div>
+          <div class="card-item">
+            <img
+              style="margin-left: 20px"
+              src="https://source.unsplash.com/random/160x160/?sofas"
+              alt=""
+              width="160px"
+            />
+            <h4><b>Top Sofa's</b></h4>
+            <h4><a href="see more">see more</a></h4>
+          </div>
+          <div class="card-item">
+            <img
+              style="margin-left: 20px"
+              src="https://source.unsplash.com/random/160x160/?beds"
+              alt=""
+              width="160px"
+            />
+            <h4><b> Suistainable Beds</b></h4>
+            <h4><a href="see more">see more</a></h4>
+          </div>
+          <div class="card-item">
+            <img
+              style="margin-left: 20px"
+              src="https://source.unsplash.com/random/160x160/?chairs and tables"
+              alt=""
+              width="160px"
+            />
+            <h4><b> Chairs & tables</b></h4>
+            <h4><a href="see more">see more</a></h4>
+          </div>
+
+          <div class="lines" style="text-align: center">
+            <p class="text-centre my-1">(Kitchen Trollys)</p>
+            <p class="text-centre my-1">Min 36% OFF</p>
+            <p class="text-centre my-1">Grab Now...!</p>
+          </div>
+        </div>
+        <div class="card5">
+          <h2 style="text-align: center">Hair and Skin care for Monsoon..</h2>
+          <div class="card-item">
+            <img
+              style="margin-left: 20px"
+              src="https://source.unsplash.com/random/160x160/?hair removal"
+              alt=""
+              width="160px"
+            />
+            <h4><b>Hair Removal Cream</b></h4>
+            <h4><a href="see more">see more</a></h4>
+          </div>
+
+          <div class="card-item">
+            <img
+              style="margin-left: 20px"
+              src="https://source.unsplash.com/random/160x160/?hair oil"
+              alt=""
+              width="160px"
+            />
+            <h4><b>Hair Oil</b></h4>
+            <h4><a href="see more">see more</a></h4>
+          </div>
+          <div class="card-item">
+            <img
+              style="margin-left: 20px"
+              src="https://source.unsplash.com/random/160x160/?sunscreen cream"
+              alt=""
+              width="160px"
+            />
+            <h4><b>sun-screen cream</b></h4>
+            <h4><a href="see more">see more</a></h4>
+          </div>
+          <div class="card-item">
+            <img
+              style="margin-left: 20px"
+              src="https://source.unsplash.com/random/160x160/?facewash"
+              alt=""
+              width="160px"
+            />
+            <h4><b>Face Wash</b></h4>
+            <h4><a href="see more">see more</a></h4>
+          </div>
+          <div class="card-item">
+            <img
+              style="margin-left: 20px"
+              src="https://source.unsplash.com/random/160x160/?handwash"
+              alt=""
+              width="160px"
+            />
+            <h4><b>Hand wash's</b></h4>
+            <h4><a href="see more">see more</a></h4>
+          </div>
+          <div class="card-item">
+            <img
+              style="margin-left: 20px"
+              src="https://source.unsplash.com/random/160x160/?skincare"
+              alt=""
+              width="160px"
+            />
+            <h4><b>Skin Care</b></h4>
+            <h4><a href="see more">see more</a></h4>
+          </div>
+          <div class="card-item">
+            <img
+              style="margin-left: 20px"
+              src="https://source.unsplash.com/random/160x160/?hair shampoo"
+              alt=""
+              width="160px"
+            />
+            <h4><b>Hair shampoo</b></h4>
+            <h4><a href="see more">see more</a></h4>
+          </div>
+
+          <div class="lines" style="text-align: center">
+            <p class="text-centre my-1">(Hair Oil)</p>
+            <p class="text-centre my-1">Min 42% OFF</p>
+            <p class="text-centre my-1">Grab Now...!</p>
+          </div>
+        </div>
+        <div class="card6">
+          <h2 style="text-align: center">Travel Essentials..</h2>
+          <div class="card-item">
+            <img
+              style="margin-left: 20px"
+              src="https://source.unsplash.com/random/160x160/?tracksuits"
+              alt=""
+              width="160px"
+            />
+            <h4><b>Tracking suits</b></h4>
+            <h4><a href="see more">see more</a></h4>
+          </div>
+
+          <div class="card-item">
+            <img
+              style="margin-left: 20px"
+              src="https://source.unsplash.com/random/160x160/?mens jackets"
+              alt=""
+              width="160px"
+            />
+            <h4><b>Mens Jackets</b></h4>
+            <h4><a href="see more">see more</a></h4>
+          </div>
+          <div class="card-item">
+            <img
+              style="margin-left: 20px"
+              src="https://source.unsplash.com/random/160x160/?body sprays"
+              alt=""
+              width="160px"
+            />
+            <h4><b>Body Sprays</b></h4>
+            <h4><a href="see more">see more</a></h4>
+          </div>
+          <div class="card-item">
+            <img
+              style="margin-left: 20px"
+              src="https://source.unsplash.com/random/160x160/?umbrellas"
+              alt=""
+              width="160px"
+            />
+            <h4><b> Designable Umbrellas</b></h4>
+            <h4><a href="see more">see more</a></h4>
+          </div>
+          <div class="card-item">
+            <img
+              style="margin-left: 20px"
+              src="https://source.unsplash.com/random/160x160/?water bottles"
+              alt=""
+              width="160px"
+            />
+            <h4><b>Water Bottles</b></h4>
+            <h4><a href="see more">see more</a></h4>
+          </div>
+          <div class="card-item">
+            <img
+              style="margin-left: 20px"
+              src="https://source.unsplash.com/random/160x160/?chocolates"
+              alt=""
+              width="160px"
+            />
+            <h4><b>Chocolates & many more..</b></h4>
+            <h4><a href="see more">see more</a></h4>
+          </div>
+          <div class="card-item">
+            <img
+              style="margin-left: 20px"
+              src="https://source.unsplash.com/random/160x160/?travel bags"
+              alt=""
+              width="160px"
+            />
+            <h4><b>Travel Bags</b></h4>
+            <h4><a href="see more">see more</a></h4>
+          </div>
+
+          <div class="lines" style="text-align: center">
+            <p class="text-centre my-1">(Travelling Bags)</p>
+            <p class="text-centre my-1">Min 24% OFF</p>
+            <p class="text-centre my-1">Grab Now...!</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer
+      class="flex-all-centre"
+      style="
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+      "
+    >
+      <p>Copyright <b>&copy;</b>2023 RishiKart.com</p>
+    </footer>
+    <script>
+      function autoRefresh() {
+        window.location = window.location.href;
+      }
+      setInterval("autoRefresh()", 50000);
+    </script>
+  </body>
+</html>
